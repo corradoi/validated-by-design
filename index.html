@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Validated-by-Design: a Shift-Left approach to Computer System Validation for cloud-native GxP platforms.">
+  <link rel="canonical" href="https://corradoi.github.io/validated-by-design/">
+  <title>Validated-by-Design | Shift-Left CSV</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17211b;
+      --muted: #526158;
+      --paper: #f5f7f1;
+      --surface: #ffffff;
+      --green: #176b4d;
+      --green-dark: #0d4a35;
+      --gold: #c5962d;
+      --line: #d8ded6;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+    }
+    .masthead {
+      min-height: 82vh;
+      display: grid;
+      align-items: center;
+      padding: 64px 24px;
+      border-top: 8px solid var(--green);
+      background:
+        linear-gradient(90deg, rgba(23, 107, 77, 0.08) 1px, transparent 1px) 0 0 / 48px 48px,
+        linear-gradient(rgba(23, 107, 77, 0.08) 1px, transparent 1px) 0 0 / 48px 48px,
+        var(--paper);
+    }
+    .hero, main, footer { width: min(960px, 100%); min-width: 0; margin: 0 auto; }
+    .kicker {
+      margin: 0 0 20px;
+      color: var(--green);
+      font: 700 0.82rem/1.2 "Trebuchet MS", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 900px;
+      margin: 0;
+      font-size: clamp(2.6rem, 7vw, 5.8rem);
+      line-height: 0.98;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+    .subtitle {
+      max-width: 720px;
+      margin: 28px 0 0;
+      color: var(--muted);
+      font-size: clamp(1.15rem, 2.5vw, 1.55rem);
+    }
+    .authors { margin: 22px 0 0; font-family: "Trebuchet MS", sans-serif; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 46px;
+      padding: 10px 18px;
+      border: 1px solid var(--green);
+      border-radius: 4px;
+      color: var(--green-dark);
+      background: var(--surface);
+      font: 700 0.95rem/1 "Trebuchet MS", sans-serif;
+      text-decoration: none;
+    }
+    .button.primary { color: #fff; background: var(--green); }
+    .button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    main { padding: 72px 24px; }
+    .thesis {
+      margin: 0 0 72px;
+      padding-left: 24px;
+      border-left: 5px solid var(--gold);
+      font-size: clamp(1.7rem, 4vw, 2.8rem);
+      line-height: 1.2;
+    }
+    .columns { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    h2 { margin: 0 0 16px; font-size: 1.6rem; }
+    p { margin: 0 0 18px; }
+    .fine-print { color: var(--muted); font-size: 0.92rem; overflow-wrap: anywhere; }
+    footer {
+      padding: 32px 24px 56px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font: 0.88rem/1.6 "Trebuchet MS", sans-serif;
+    }
+    footer a { color: var(--green-dark); }
+    @media (max-width: 680px) {
+      .masthead { min-height: 92vh; padding-top: 44px; }
+      .columns { grid-template-columns: 1fr; gap: 28px; }
+      .button { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <div class="hero">
+      <p class="kicker">Paper 1 of 3 · Vision &amp; Operating Model</p>
+      <h1>Validated-by-Design</h1>
+      <p class="subtitle">A Shift-Left Approach to Computer System Validation for Cloud-Native GxP Platforms</p>
+      <p class="authors">Corrado Iorizzo · Steven Schmidt · Gupta Telluri</p>
+      <nav class="actions" aria-label="Paper links">
+        <a class="button primary" href="releases/v1.0.0/validated-by-design-book-1-v1.0.0.pdf">Read the PDF</a>
+        <a class="button" href="releases/v1.0.0/RELEASE-NOTES.md">Release notes</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <blockquote class="thesis">Qualify for reuse. Inherit where justified. Prove continuously.</blockquote>
+    <section class="columns" aria-label="Paper overview">
+      <div>
+        <h2>The proposition</h2>
+        <p>Cloud-native platforms change continuously. Validation evidence and oversight must remain aligned with that operating state rather than being reconstructed only at the end of delivery.</p>
+      </div>
+      <div>
+        <h2>The boundary</h2>
+        <p>Automation and reusable platform controls can strengthen assurance, but they do not replace intended-use assessment, risk-based judgement, controlled change, exception management, or Quality accountability.</p>
+      </div>
+    </section>
+    <p class="fine-print">The PDF is the canonical edition. SHA-256: C56411ED86E86953DC834612ED601338702A9C30B1C693C333EFB195F0A68342</p>
+  </main>
+  <footer>
+    <p>Copyright &copy; 2026 Corrado Iorizzo, Steven Schmidt, and Gupta Telluri. Except where otherwise noted, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+    <p>The views expressed are those of the authors and do not necessarily represent those of Microsoft, Lonza, or their respective affiliates. This paper is informational and does not constitute legal, regulatory, or quality-system advice.</p>
+  </footer>
+</body>
+</html>

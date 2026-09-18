@@ -1,0 +1,27 @@
+{
+  "title": "Validated-by-Design: A Shift-Left Approach to Computer System Validation for Cloud-Native GxP Platforms",
+  "description": "Paper 1 of 3: Vision & Operating Model. This position paper proposes a Shift-Left CSV operating model that brings governed controls and contemporaneous evidence closer to design, deployment, operation, and controlled change while preserving intended-use assessment, risk-based judgement, and Quality accountability.",
+  "upload_type": "publication",
+  "publication_type": "report",
+  "creators": [
+    {
+      "name": "Iorizzo, Corrado"
+    },
+    {
+      "name": "Schmidt, Steven"
+    },
+    {
+      "name": "Telluri, Gupta"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "keywords": [
+    "computer system validation",
+    "CSV",
+    "GxP",
+    "cloud-native",
+    "continuous assurance",
+    "policy-as-code"
+  ]
+}
