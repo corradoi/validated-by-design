@@ -4,7 +4,7 @@
 
 **Paper 1 of 3: Vision & Operating Model**
 
-Corrado Iorizzo, Steven Schmidt, and Gupta Telluri
+Corrado Iorizzo, Steven Schmidt, and Gupta Tulluri
 
 Cloud-native platforms change continuously, while traditional Computer System Validation often concentrates assurance evidence at the end of delivery. This position paper proposes a Shift-Left CSV operating model that brings governed controls and contemporaneous evidence closer to design, deployment, operation, and controlled change while preserving intended-use assessment, risk-based judgement, and Quality accountability.
 
@@ -14,11 +14,11 @@ The central message is:
 
 ## Read The Paper
 
-- [Download the PDF](releases/v1.0.0/validated-by-design-book-1-v1.0.0.pdf)
+- [Download the PDF](releases/v1.0.1/validated-by-design-book-1-v1.0.1.pdf)
 - [View the web landing page](index.html)
-- [Review the release notes](releases/v1.0.0/RELEASE-NOTES.md)
+- [Review the release notes](releases/v1.0.1/RELEASE-NOTES.md)
 
-The PDF is the canonical edition. Its SHA-256 digest is recorded in [SHA256SUMS.txt](releases/v1.0.0/SHA256SUMS.txt).
+The PDF is the canonical edition. Its SHA-256 digest is recorded in [SHA256SUMS.txt](releases/v1.0.1/SHA256SUMS.txt).
 
 ## Scope
 
@@ -33,7 +33,7 @@ The views expressed are those of the authors and do not necessarily represent th
 
 ## License
 
-Copyright (c) 2026 Corrado Iorizzo, Steven Schmidt, and Gupta Telluri.
+Copyright (c) 2026 Corrado Iorizzo, Steven Schmidt, and Gupta Tulluri.
 
 Except where otherwise noted, this work is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). When reusing the work, credit the authors, link to the license, and indicate whether changes were made.
 

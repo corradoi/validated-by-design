@@ -3,8 +3,8 @@ param()
 
 $ErrorActionPreference = 'Stop'
 $repositoryRoot = Split-Path -Parent $PSScriptRoot
-$expectedPdfHash = 'C56411ED86E86953DC834612ED601338702A9C30B1C693C333EFB195F0A68342'
-$pdfRelativePath = 'releases/v1.0.0/validated-by-design-book-1-v1.0.0.pdf'
+$expectedPdfHash = '18CF4223204F7C4485C6249902463CA407142D5310BF247EC99C0280052287CE'
+$pdfRelativePath = 'releases/v1.0.1/validated-by-design-book-1-v1.0.1.pdf'
 $requiredFiles = @(
     '.nojekyll',
     '.zenodo.json',
@@ -14,8 +14,8 @@ $requiredFiles = @(
     'README.md',
     'index.html',
     $pdfRelativePath,
-    'releases/v1.0.0/RELEASE-NOTES.md',
-    'releases/v1.0.0/SHA256SUMS.txt'
+    'releases/v1.0.1/RELEASE-NOTES.md',
+    'releases/v1.0.1/SHA256SUMS.txt'
 )
 
 $failures = [System.Collections.Generic.List[string]]::new()
@@ -47,6 +47,23 @@ if (Test-Path -LiteralPath $pdfPath -PathType Leaf) {
 $landingPage = Get-Content -LiteralPath (Join-Path $repositoryRoot 'index.html') -Raw
 if ($landingPage -notmatch [regex]::Escape($pdfRelativePath)) {
     $failures.Add('The landing page does not link to the canonical PDF.')
+}
+
+$publicText = @(
+    'README.md',
+    'CITATION.cff',
+    '.zenodo.json',
+    'index.html',
+    'releases/v1.0.1/RELEASE-NOTES.md'
+) | ForEach-Object { Get-Content -LiteralPath (Join-Path $repositoryRoot $_) -Raw }
+$joinedPublicText = $publicText -join "`n"
+
+if ($joinedPublicText -match 'Telluri') {
+    $failures.Add('Public repository text contains the misspelled surname Telluri.')
+}
+
+if ($joinedPublicText -notmatch 'Tulluri') {
+    $failures.Add('Public repository text does not contain the corrected surname Tulluri.')
 }
 
 if ($failures.Count -gt 0) {

@@ -2,14 +2,14 @@ cff-version: 1.2.0
 message: "If you use this work, please cite it using the metadata below."
 title: "Validated-by-Design: A Shift-Left Approach to Computer System Validation for Cloud-Native GxP Platforms"
 type: report
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-09-18
 authors:
   - family-names: Iorizzo
     given-names: Corrado
   - family-names: Schmidt
     given-names: Steven
-  - family-names: Telluri
+  - family-names: Tulluri
     given-names: Gupta
 license: CC-BY-4.0
 abstract: >-

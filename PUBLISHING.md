@@ -44,15 +44,15 @@ In **Settings > Pages**, select **Deploy from a branch**, choose `main`, and pub
 
 ## 4. Create An Immutable Release
 
-1. Draft a GitHub release using tag `v1.0.0`.
-2. Use the contents of `releases/v1.0.0/RELEASE-NOTES.md` as the release notes.
-3. Attach `validated-by-design-book-1-v1.0.0.pdf` as a release asset.
+1. Draft a GitHub release using tag `v1.0.1`.
+2. Use the contents of `releases/v1.0.1/RELEASE-NOTES.md` as the release notes.
+3. Attach `validated-by-design-book-1-v1.0.1.pdf` as a release asset.
 4. Verify the attached file against `SHA256SUMS.txt`.
 5. Publish the release only after all assets are present.
 
 ## 5. Archive With Zenodo
 
-Connect the repository in Zenodo before publishing the GitHub release. After Zenodo archives `v1.0.0`:
+Connect the repository in Zenodo before publishing the GitHub release. After Zenodo archives `v1.0.1`:
 
 - add the version DOI and concept DOI to `README.md`;
 - add the DOI and repository URL to `CITATION.cff`;
